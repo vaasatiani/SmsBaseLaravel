@@ -1,0 +1,39 @@
+{
+  "name": "smsbase/smsbase",
+  "description": "A Laravel package to interact with the SMS Api V2.",
+  "type": "library",
+  "version": "1.0-beta",
+  "keywords": ["sms", "laravel", "api"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Your Name",
+      "email": "your.email@example.com"
+    }
+  ],
+  "require": {
+    "php": "^7.3|^8.0",
+    "illuminate/support": "^7.0|^8.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^5.0|^6.0",
+    "phpunit/phpunit": "^8.5|^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "SmsBase\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "SmsBase\\SmsApiServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
